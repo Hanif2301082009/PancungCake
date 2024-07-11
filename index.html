@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanif al zikri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style type="text/css">
+      .nm {
+    text-transform: uppercase;
+    color: purple;
+  }
+    </style>
+    <link rel="stylesheet" href="flip.css">
+    <style>
+.centerText
+{
+ text-align:center;
+ display:block;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.flip-box {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  text-align: middle;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  color: transparent;
+}
+
+.flip-box-back {;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+    <!-- Awal navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: white">Hanif al zikri</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#" style="color: white">Home</a>
+              <a class="nav-link" href="#" style="color: white">About</a>
+              <a class="nav-link" href="#" style="color: white">Project</a>
+              <a class="nav-link" href="#" style="color: white">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(140, 140, 140, 0.7)" offset="0%"></stop><stop stop-color="rgba(129.634, 74.088, 141.516, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,343L48,310.3C96,278,192,212,288,163.3C384,114,480,82,576,106.2C672,131,768,212,864,212.3C960,212,1056,131,1152,89.8C1248,49,1344,49,1440,114.3C1536,180,1632,310,1728,359.3C1824,408,1920,376,2016,310.3C2112,245,2208,147,2304,147C2400,147,2496,245,2592,269.5C2688,294,2784,245,2880,245C2976,245,3072,294,3168,294C3264,294,3360,245,3456,220.5C3552,196,3648,196,3744,228.7C3840,261,3936,327,4032,326.7C4128,327,4224,261,4320,204.2C4416,147,4512,98,4608,114.3C4704,131,4800,212,4896,212.3C4992,212,5088,131,5184,89.8C5280,49,5376,49,5472,81.7C5568,114,5664,180,5760,245C5856,310,5952,376,6048,383.8C6144,392,6240,343,6336,310.3C6432,278,6528,261,6624,277.7C6720,294,6816,343,6864,367.5L6912,392L6912,490L6864,490C6816,490,6720,490,6624,490C6528,490,6432,490,6336,490C6240,490,6144,490,6048,490C5952,490,5856,490,5760,490C5664,490,5568,490,5472,490C5376,490,5280,490,5184,490C5088,490,4992,490,4896,490C4800,490,4704,490,4608,490C4512,490,4416,490,4320,490C4224,490,4128,490,4032,490C3936,490,3840,490,3744,490C3648,490,3552,490,3456,490C3360,490,3264,490,3168,490C3072,490,2976,490,2880,490C2784,490,2688,490,2592,490C2496,490,2400,490,2304,490C2208,490,2112,490,2016,490C1920,490,1824,490,1728,490C1632,490,1536,490,1440,490C1344,490,1248,490,1152,490C1056,490,960,490,864,490C768,490,672,490,576,490C480,490,384,490,288,490C192,490,96,490,48,490L0,490Z"></path></svg>
+      
+      <!-- Akhir wave-->
+      <!-- Awal FLipside-->
+      <div class="jumbotron text-center" >
+        <h1 class="display-4">Hanif al zikri</h1>
+        <p class="lead">College  |  Networking</p>
+        <br><br><br><br><br>
+        
+      </div>
+      <div class="position-absolute top-40 start-50 translate-middle">
+      <div class="flip-box">
+      <div class="flip-box-inner" align="middle">
+      <div class="flip-box-front" align="middle">
+      <img src="NN.png" alt="Hanif" class="img-thumbnail rounded-circle">
+    </div>
+    <div class="flip-box-back" class="img-thumbnail rounded-circle">
+        <img align="middle" src="flip2.jpg" alt="Hanif" class="img-thumbnail rounded-circle">
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<br><br><br><br><br><br><br><br>
+
+
+
+      <!-- akhir jumbotron -->
+
+      <!-- About -->
+      <section id="About">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                  <br><br>
+                    <h2>About Me</h2>
+                </div>
+            </div>
+        </div>
+      <div class="row justify-content-center fs-5">
+        <div class="col-md-4">
+            <p><b><span class="nm">HANIF AL ZIKRI</b></span> adalah nama lengkap saya, saya lahir di <b><span class="nm">Padang Lua</span></b> pada tanggal 01 Oktober 2004. hobi saya yaitu bermain gitar, berenang, bermain game. Makanan favorit saya yaitu KEBAB, kebab is Number 1</p>
+        </div>
+        <div class="col-md-4">
+            <p>Selain pekerjaan, saya juga menikmati membaca buku, berolahraga, "berkumpul dengan keluarga dan teman-teman, dan juga saya hoby memotret nature. Saya percaya bahwa keyakinan atau motto pribadi Anda, "belajar adalah proses seumur hidup", "kolaborasi membawa kesuksesan yang lebih besar" adalah kunci untuk mencapai kesuksesan dan kebahagiaan dalam hidup.</p>
+        </div>
+      </div>
+      <br><br>
+      <!-- Akhir About-->
+
+      <!-- Project -->
+      <section id="project">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col"></div>
+                <h2>My Projects</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="pp1.jpg" class="card-image">
+                            <br>
+                            <p class="card-text">Project 1</p>
+                        <img src="sl3.jpg" class="card-image">
+                        <div class="card-body">
+                            <p class="card-text">Project 4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="p2.jpg" class="card-image">
+                        <div class="card-body">
+                            <p class="card-text">Project 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="kbb.jpg" class="card-image">
+                            <br>
+                            <p class="card-text">Project 3</p>
+                        <img src="sl2.jpg" class="card-image">
+                        <div class="card-body">
+                            <p class="card-text">Project 5</p>
+                        </div>
+                    </div>
+                </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+            </div>
+        </div>
+      </section>
+      <br><br><br>
+
+      <!-- Wave-->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8c8c8c" fill-opacity="1" d="M0,96L0,96L36.9,96L36.9,256L73.8,256L73.8,96L110.8,96L110.8,160L147.7,160L147.7,160L184.6,160L184.6,192L221.5,192L221.5,96L258.5,96L258.5,160L295.4,160L295.4,224L332.3,224L332.3,192L369.2,192L369.2,128L406.2,128L406.2,192L443.1,192L443.1,128L480,128L480,32L516.9,32L516.9,160L553.8,160L553.8,128L590.8,128L590.8,224L627.7,224L627.7,224L664.6,224L664.6,64L701.5,64L701.5,288L738.5,288L738.5,160L775.4,160L775.4,160L812.3,160L812.3,0L849.2,0L849.2,256L886.2,256L886.2,32L923.1,32L923.1,96L960,96L960,128L996.9,128L996.9,64L1033.8,64L1033.8,192L1070.8,192L1070.8,96L1107.7,96L1107.7,288L1144.6,288L1144.6,32L1181.5,32L1181.5,64L1218.5,64L1218.5,96L1255.4,96L1255.4,128L1292.3,128L1292.3,96L1329.2,96L1329.2,192L1366.2,192L1366.2,96L1403.1,96L1403.1,32L1440,32L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#8c8c8c" fill-opacity="1" d="M0,96L0,96L36.9,96L36.9,256L73.8,256L73.8,96L110.8,96L110.8,160L147.7,160L147.7,160L184.6,160L184.6,192L221.5,192L221.5,96L258.5,96L258.5,160L295.4,160L295.4,224L332.3,224L332.3,192L369.2,192L369.2,128L406.2,128L406.2,192L443.1,192L443.1,128L480,128L480,32L516.9,32L516.9,160L553.8,160L553.8,128L590.8,128L590.8,224L627.7,224L627.7,224L664.6,224L664.6,64L701.5,64L701.5,288L738.5,288L738.5,160L775.4,160L775.4,160L812.3,160L812.3,0L849.2,0L849.2,256L886.2,256L886.2,32L923.1,32L923.1,96L960,96L960,128L996.9,128L996.9,64L1033.8,64L1033.8,192L1070.8,192L1070.8,96L1107.7,96L1107.7,288L1144.6,288L1144.6,32L1181.5,32L1181.5,64L1218.5,64L1218.5,96L1255.4,96L1255.4,128L1292.3,128L1292.3,96L1329.2,96L1329.2,192L1366.2,192L1366.2,96L1403.1,96L1403.1,32L1440,32L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"></path></svg><br><br><br><br><br>
+            <!--Akhir wave-->
+      <!-- Akhir Project -->
+      <!-- Contact -->
+      <section id="contact" >
+        <div class="container">
+        <div class="row text-center">
+        <div class="col">
+          <h2>Contact Me</h2>
+        </div>
+        </div>
+        <div class="row justify-content-center">
+        <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+        <label for="name" class="form-label">Nama Lengkap</label>
+        <input type="text" class="form-control" id="name" aria-describedby="name" /> </div>
+        <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" aria-describedby="email" /> </div>
+        <div class="mb-3">
+        <label for="pesan" class="form-label">Pesan</label>
+        <textarea class="form-control" id="pesan" rows="3"></textarea> </div>
+        <button type="submit" class="btn btn-secondary">Kirim</button>
+        </form>
+        </div>
+        </div>
+      </div>
+    </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#212529" fill-opacity="1" d="M0,128L40,112C80,96,160,64,240,64C320,64,400,96,480,122.7C560,149,640,171,720,176C800,181,880,171,960,149.3C1040,128,1120,96,1200,74.7C1280,53,1360,43,1400,37.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+      <!-- Footer -->
+      <footer class="bg-dark text-white text-center pb-5">
+      <p>Created by <i class="bi bi-youtube text-danger"></i><a href="https://youtu.be/FocFked1TbQ?feature=shared" class="text-white fw-bold">Hanif</a></p> </footer>
+      <!-- Akhir Footer -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+</b>
+</p>
+</div>
+</div>
+</section>
+</body>
+</body>
+</html>
